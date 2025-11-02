@@ -1,7 +1,7 @@
 ﻿from collections import Counter
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBHdGOr2dWxUcwEQMQ4xmJX3aRKUVgEbP0")
+client = genai.Client(api_key="YOUR_API_KEY_HERE")
 
 def reason(CO2, time, distance, numPeople, locations, hub, connectivity=None, stats=None):
     counts = Counter([str(item).upper() for item in (locations or [])])
